@@ -1,0 +1,28 @@
+{
+  "name": "vuex-dot-buffer",
+  "version": "1.0.0",
+  "description": "plugin for vuex-dot providing buffering of changes with trigger for flushing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarsky-tgz/vuex-dot-buffer.git"
+  },
+  "keywords": [
+    "vuex",
+    "buffer",
+    "changes",
+    "vuex-dot",
+    "v-model",
+    "two",
+    "way"
+  ],
+  "author": "Yaroslav Dobzhanskij <merlyn.tgz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yarsky-tgz/vuex-dot-buffer/issues"
+  },
+  "homepage": "https://github.com/yarsky-tgz/vuex-dot-buffer#readme"
+}
