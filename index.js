@@ -1,3 +1,8 @@
+/**
+ * Creates buffer plugin for vuex-dot with given trigger value used for buffer flush
+ * @param trigger
+ * @return {*}
+ */
 module.exports = trigger => {
   let buffer = {};
   let delayed = {};
@@ -16,7 +21,7 @@ module.exports = trigger => {
         get: () => triggerValue,
         set(value) {
           triggerValue = value;
-          for (let setter in delayed) delayed[ setter ](buffer[ setter ]);
+          for (let setter of Object.keys(delayed)) delayed[ setter ](buffer[ setter ]);
           buffer = {};
           delayed = {};
         }
