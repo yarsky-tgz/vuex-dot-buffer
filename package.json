@@ -1,6 +1,6 @@
 {
   "name": "vuex-dot-buffer",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "plugin for vuex-dot providing buffering of changes with trigger for flushing",
   "main": "index.js",
   "scripts": {
