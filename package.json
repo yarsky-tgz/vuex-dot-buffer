@@ -4,7 +4,9 @@
   "description": "plugin for vuex-dot providing buffering of changes with trigger for flushing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap --coverage test/*.js",
+    "build": "rollup -c",
+    "minify": "minify dist/vuex-dot-buffer.js -o dist/vuex-dot-buffer.min.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,13 @@
   "bugs": {
     "url": "https://github.com/yarsky-tgz/vuex-dot-buffer/issues"
   },
-  "homepage": "https://github.com/yarsky-tgz/vuex-dot-buffer#readme"
+  "homepage": "https://github.com/yarsky-tgz/vuex-dot-buffer#readme",
+  "devDependencies": {
+    "babel-minify": "^0.4.3",
+    "rollup": "^0.60.2",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "tap": "^12.0.1",
+    "vuex-dot": "^2.5.2"
+  }
 }
